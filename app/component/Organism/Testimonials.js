@@ -2,13 +2,14 @@
 import Testimonialcard from "../Molecule/Testimonialcard";
 import scp from "../../../public/scp.jpg"
 
+
 const testimonials = [
   {
     testimonial:
       "Whitepace is designed as a collaboration tool for businesses that is a full project management solution.",
     name: "Oberon Shaw, MCH",
     role: "Head of Talent Acquisition, North America",
-    avatar: {scp},
+    avatar: "/avatar1.jpg",
     isHighlighted: false,
   },
   {
@@ -41,7 +42,7 @@ export default function Testimonials() {
           <Testimonialcard key={index} {...item} />
         ))}
       </div>
-      <div className="mt-12 flex justify-center space-x-2">
+      <div className="mt-20 flex justify-center space-x-2">
         <span className="w-3 h-3 bg-blue-950 rounded-full"></span>
         <span className="w-3 h-3 bg-gray-400 rounded-full"></span>
         <span className="w-3 h-3 bg-gray-400 rounded-full"></span>

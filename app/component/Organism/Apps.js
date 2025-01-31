@@ -2,14 +2,15 @@
 import Button from "../Atom/Button";
 import Image from "next/image";
 import scp from "../../../public/scp.jpg"
+import circle3 from "../../../public/circle3.png"
 
 
 export default function Apps() {
   return (
-    <section className="py-32 px-20 bg-blue-950 flex items-center ">
+    <section className="py-32 px-20 bg-blue-900 flex items-center ">
       {/* left */}
       <div className="w-[40%] flex justify-center mx-auto">
-         <Image src={scp} alt="Laptop" width={400} height={250} className="" />
+         <Image src={circle3} alt="Laptop" width={400} height={250} className="" />
       </div>
 
       {/* Right  */}

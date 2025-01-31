@@ -3,6 +3,7 @@ import Button from "../Atom/Button";
 import Image from "next/image";
 import scp from "../../../public/scp.jpg"
 import SponsorLogos from "../Molecule/Sponsor";
+import circle2 from '../../../public/circle2.png'
 
 export default function Data() {
   return (
@@ -22,7 +23,7 @@ export default function Data() {
               </Button>
             </div>
             <div className="flex-1 mt-6 mb-24 ">
-              <Image src={scp} alt="Laptop" width={500} height={300} className="rounded-lg" />
+              <Image src={circle2} alt="Laptop" width={500} height={300} className="rounded-lg" />
             </div>
  
           </section>
@@ -30,7 +31,7 @@ export default function Data() {
           <section>
 
           <div>
-            <h1 className="text-5xl font-bold mt-30"> Our Sponsors</h1>
+            <h1 className="text-5xl font-bold mt-30 text-center"> Our Sponsors</h1>
             <SponsorLogos/>
           </div>
 

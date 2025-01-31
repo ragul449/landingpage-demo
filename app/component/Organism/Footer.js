@@ -3,6 +3,8 @@ import FooterLinks from "../Molecule/Footlink";
 import Button from "../Atom/Button";
 import Image from "next/image";
 import facebook from "../../../public/facebook.svg";
+import linkedin from "../../../public/linkedin.svg";
+import twitter from "../../../public/twitter.svg";
 
 const productLinks = ["Overview", "Pricing", "Customer stories"];
 const resourcesLinks = ["Blog", "Guides & tutorials", "Help center"];
@@ -21,7 +23,8 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Middle Sections - Links */}
+        {/* Middle - Links */}
+
         <FooterLinks title="Product" links={productLinks} />
         <FooterLinks title="Resources" links={resourcesLinks} />
         <FooterLinks title="Company" links={companyLinks} />
@@ -40,18 +43,20 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-8 pt-6 text-sm flex justify-between items-center">
+
+      
+      <div className="border-t border-gray-700 mt-8 pt-6 text-sm flex justify-between items-center ">
         <div className="flex space-x-4">
           <a href="#" className="">English</a>
           <a href="#" className="">Terms & Privacy</a>
           <a href="#" className="">Security</a>
           <a href="#" className="">Status</a>
         </div>
-        <p>© 2021 Whitepace LLC .</p>
-        <div className="flex space-x-4">
-          <a href="#"><Image src={facebook} alt="facebook" className="h-5"/></a>
-          <a href="#"><img src="/twitter.svg" alt="Twitter" className="h-5" /></a>
-          <a href="#"><img src="/linkedin.svg" alt="LinkedIn" className="h-5" /></a>
+        <p className="">© 2025 Whitepace LLC .</p>
+        <div className="flex space-x-1">
+          {/* <a href="#"><Image src={facebook} alt="facebook" className="h-5"/></a>
+          <a href="#"><Image src={twitter} alt="facebook" className="h-5" /></a>
+          <a href="#"><Image src={linkedin} alt="facebook" className="h-5"/></a> */}
         </div>
       </div>
     </footer>

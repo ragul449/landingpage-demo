@@ -9,7 +9,7 @@ export default function Testimonialcard({ testimonial, name, role, avatar, isHig
         isHighlighted ? "bg-blue-500 text-white" : "bg-white"
       }`}
     >
-      {/* <QuoteIcon /> */}
+      
       <p className="mt-4">{testimonial}</p>
       <hr className="my-4 border-gray-300" />
       <div className="flex items-center gap-3">
